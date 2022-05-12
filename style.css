@@ -14,7 +14,7 @@ html {
 .container {
     height: 100vh;
     width: 100%;
-    background-color: #000;
+    /* background-color: #000; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,7 +23,7 @@ html {
 .triangle {
     height: 0px;
     width: 0px;
-    border-right: 100px solid transparent;
-    border-left: 100px solid transparent;
-    border-bottom: 100px solid green;
+    border-right: 200px solid transparent;
+    border-left: 200px solid transparent;
+    border-bottom: 200px solid black;
 }
