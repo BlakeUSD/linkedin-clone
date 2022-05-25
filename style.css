@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: content-box;
     font-family: 'Poppins', sans-serif;
     transition: all 300ms ease;
 }
@@ -27,4 +27,19 @@ html {
     border-right: 200px solid transparent;
     border-left: 200px solid transparent;
     border-bottom: 200px solid black;
+    margin: 8px;
+}
+
+.foo {
+    width: 100px;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid black;
+}
+
+.bar {
+    width: 100px;
+    padding: 15px;
+    margin: 0px;
+    border: 1px solid black;
 }
