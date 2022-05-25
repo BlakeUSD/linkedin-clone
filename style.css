@@ -30,6 +30,15 @@ html {
     margin: 8px;
 }
 
+.triangle--indigo {
+    height: 0px;
+    width: 0px;
+    border-right: 200px solid transparent;
+    border-left: 200px solid transparent;
+    border-bottom: 200px solid indigo;
+    margin: 8px;
+}
+
 .foo {
     width: 100px;
     padding: 10px;
