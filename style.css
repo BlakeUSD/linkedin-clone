@@ -38,17 +38,3 @@ html {
     border-bottom: 200px solid indigo;
     margin: 8px;
 }
-
-.foo {
-    width: 100px;
-    padding: 10px;
-    margin: 5px;
-    border: 1px solid black;
-}
-
-.bar {
-    width: 100px;
-    padding: 15px;
-    margin: 0px;
-    border: 1px solid black;
-}
