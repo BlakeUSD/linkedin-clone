@@ -18,3 +18,7 @@ async function rainbow() {
 }
 
 rainbow();
+
+function increaseCount() {
+    // pending
+}
