@@ -22,12 +22,12 @@ rainbow();
 let count = 0;
 document.getElementById("increase").addEventListener('click', increaseCount)
 function increaseCount() {
-    count++
+    count++;
     console.log(count)
 }
 
 document.getElementById("decrease").addEventListener('click', decreaseCount)
 function decreaseCount() {
-    count--
+    count--;
     console.log(count)
 }
