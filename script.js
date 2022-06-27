@@ -23,11 +23,11 @@ let count = 0;
 document.getElementById("increase").addEventListener('click', increaseCount)
 function increaseCount() {
     count++;
-    console.log(count)
+    console.log(count);
 }
 
 document.getElementById("decrease").addEventListener('click', decreaseCount)
 function decreaseCount() {
     count--;
-    console.log(count)
+    console.log(count);
 }
