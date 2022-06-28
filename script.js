@@ -19,6 +19,7 @@ async function rainbow() {
 
 rainbow();
 
+//Button Functionality
 let count = 0;
 document.getElementById("increase").addEventListener('click', increaseCount)
 function increaseCount() {
