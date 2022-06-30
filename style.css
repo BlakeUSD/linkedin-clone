@@ -38,3 +38,7 @@ html {
     border-bottom: 200px solid indigo;
     margin: 8px;
 }
+
+triangle--orange {
+    height: 0;
+}
