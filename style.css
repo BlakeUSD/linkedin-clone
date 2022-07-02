@@ -42,4 +42,5 @@ html {
 triangle--orange {
     height: 0;
     width: 0;
+    border-right: 200px solid transparent;
 }
