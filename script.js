@@ -30,9 +30,12 @@ function increaseCount() {
 document.getElementById("decrease").addEventListener('click', decreaseCount)
 function decreaseCount() {
     count--;
-    console.log(count); K
+    console.log(count);
 }
 
 const filterFalsy = (value) => {
     return !value;
+}
+const filterTruthy = (value) => {
+    return !!value;
 }
