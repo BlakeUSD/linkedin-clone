@@ -39,3 +39,7 @@ const filterFalsy = (value) => {
 const filterTruthy = (value) => {
     return !!value;
 }
+
+function isOdd(num) {
+    return num%2 !== 0 ? true : false;
+}
