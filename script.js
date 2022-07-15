@@ -45,5 +45,5 @@ function isOdd(num) {
 }
 
 function isEven(num) {
-    //do something
+    return num%2 === 0 ? true : false;
 }
