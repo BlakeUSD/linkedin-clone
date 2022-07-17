@@ -47,3 +47,7 @@ function isOdd(num) {
 function isEven(num) {
     return num%2 === 0 ? true : false;
 }
+
+function isInteger(num) {
+    //do something
+}
