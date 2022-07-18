@@ -41,13 +41,13 @@ const filterTruthy = (value) => {
 }
 
 function isOdd(num) {
-    return num%2 !== 0 ? true : false;
+    return num % 2 !== 0 ? true : false;
 }
 
 function isEven(num) {
-    return num%2 === 0 ? true : false;
+    return num % 2 === 0 ? true : false;
 }
 
 function isInteger(num) {
-    //do something
+    if (parseInt(num));
 }
