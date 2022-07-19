@@ -51,3 +51,4 @@ function isEven(num) {
 function isInteger(num) {
     if (parseInt(num));
 }
+console.log(isInteger(1))
