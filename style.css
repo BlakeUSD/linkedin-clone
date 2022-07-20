@@ -49,8 +49,8 @@ html {
 }
 .triangle {
     height: 0;
-    /* width: 0;
-    border-right: 200px solid transparent;
+    width: 0;
+    /* border-right: 200px solid transparent;
     border-left: 200px solid transparent;
     border-bottom: 200px solid orange;
     margin: 8px; */
