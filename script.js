@@ -21,17 +21,24 @@ rainbow();
 
 //Button Functionality
 let count = 0;
+const counterText = document.getElementById("counterText");
+
+function handleChange() {
+    return counterText.innerHTML = count;
+}
+
 document.getElementById("increase").addEventListener('click', increaseCount)
 function increaseCount() {
     count++;
-    console.log(count);
+    handleChange();
 }
 
 document.getElementById("decrease").addEventListener('click', decreaseCount)
 function decreaseCount() {
     count--;
-    console.log(count);
+    handleChange();
 }
+
 
 const filterFalsy = (value) => {
     return !value;
@@ -51,4 +58,3 @@ function isEven(num) {
 function isInteger(num) {
     if (parseInt(num));
 }
-console.log(isInteger(1))
