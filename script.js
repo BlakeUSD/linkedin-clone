@@ -47,7 +47,7 @@ const filterTruthy = (value) => {
     return !!value;
 }
 
-function isOdd(num) {
+function isOddNum(num) {
     return num % 2 !== 0 ? true : false;
 }
 
