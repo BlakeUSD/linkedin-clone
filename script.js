@@ -8,8 +8,8 @@ const delayedColorChange = (color, delay) => {
 };
 
 async function rainbow() {
-    await delayedColorChange("red", 1000)
-    await delayedColorChange("orange", 1000)
+    await delayedColorChange("red", 1000);
+    await delayedColorChange("orange", 1000);
     await delayedColorChange("yellow", 1000)
     await delayedColorChange("green", 1000)
     await delayedColorChange("blue", 1000)
@@ -19,7 +19,7 @@ async function rainbow() {
 
 rainbow();
 
-//Button Functionality
+//Button Functionality Section
 let count = 0;
 const counterText = document.getElementById("counterText");
 
