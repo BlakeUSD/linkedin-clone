@@ -4,7 +4,7 @@ const delayedColorChange = (color, delay) => {
             document.body.style.backgroundColor = color;
             resolve();
         }, delay);
-    })
+    });
 };
 
 async function rainbow() {
