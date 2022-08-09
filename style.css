@@ -41,6 +41,7 @@ html {
 
 .triangle--indigo:hover {
     transform: translateX(20deg);
+    transform: translateY(10deg);
 }
 
 .triangle--orange {
