@@ -39,7 +39,6 @@ function decreaseCount() {
     handleChange();
 }
 
-
 const filterFalsy = (value) => {
     return !value;
 }

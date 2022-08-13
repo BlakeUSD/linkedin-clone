@@ -44,9 +44,9 @@ html {
     transform: translateY(10deg);
 }
 
-@keyframes {
+/* @keyframes {
     //TBD
-}
+} */
 
 .triangle--orange {
     height: 0;
@@ -57,11 +57,11 @@ html {
     margin: 8px;
 }
 
-.triangle {
-    height: 0;
-    width: 0;
+.triangle--yellow {
+    height: 0px;
+    width: 0px;
     border-right: 200px solid transparent;
     border-left: 200px solid transparent;
-    border-bottom: 200px solid orange;
+    border-bottom: 200px solid yellow;
     margin: 8px;
 }
