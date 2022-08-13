@@ -3,7 +3,7 @@
 * {
     /* margin: 0;
     padding: 0; */
-    box-sizing: content-box;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     transition: all 300ms ease;
 }
@@ -43,10 +43,6 @@ html {
     transform: translateX(20deg);
     transform: translateY(10deg);
 }
-
-/* @keyframes {
-    //TBD
-} */
 
 .triangle--orange {
     height: 0;
