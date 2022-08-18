@@ -50,6 +50,7 @@ html {
 .triangle--orange {
     height: 0;
     width: 0;
+    max-width: 0px;
     border-right: 200px solid transparent;
     border-left: 200px solid transparent;
     border-bottom: 200px solid orange;
