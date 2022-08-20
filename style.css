@@ -1,68 +1,69 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap");
 
 * {
-    /* margin: 0;
+  /* margin: 0;
     padding: 0; */
-    box-sizing: content-box;
-    font-family: 'Poppins', sans-serif;
-    transition: all 300ms ease;
+  box-sizing: content-box;
+  font-family: "Poppins", sans-serif;
+  transition: all 300ms ease;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 .container {
-    height: 100vh;
-    width: 100%;
-    /* background-color: #000; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+  height: 100vh;
+  width: 100%;
+  /* background-color: #000; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .triangle {
-    height: 0px;
-    width: 0px;
-    max-width: 0px;
-    border-right: 200px solid transparent;
-    border-left: 200px solid transparent;
-    border-bottom: 200px solid black;
-    margin: 8px;
+  height: 0px;
+  width: 0px;
+  max-width: 0px;
+  border-right: 200px solid transparent;
+  border-left: 200px solid transparent;
+  border-bottom: 200px solid black;
+  margin: 8px;
 }
 
 .triangle--indigo {
-    height: 0px;
-    width: 0px;
-    max-width: 0;
-    border-right: 200px solid transparent;
-    border-left: 200px solid transparent;
-    border-bottom: 200px solid indigo;
-    margin: 8px;
+  height: 0px;
+  width: 0px;
+  max-width: 0;
+  min-width: 0;
+  border-right: 200px solid transparent;
+  border-left: 200px solid transparent;
+  border-bottom: 200px solid indigo;
+  margin: 8px;
 }
 
 .triangle--indigo:hover {
-    transform: translateX(20deg);
-    transform: translateY(10deg);
+  transform: translateX(20deg);
+  transform: translateY(10deg);
 }
 
 .triangle--orange {
-    height: 0;
-    width: 0;
-    max-width: 0px;
-    border-right: 200px solid transparent;
-    border-left: 200px solid transparent;
-    border-bottom: 200px solid orange;
-    margin: 8px;
+  height: 0;
+  width: 0;
+  max-width: 0px;
+  border-right: 200px solid transparent;
+  border-left: 200px solid transparent;
+  border-bottom: 200px solid orange;
+  margin: 8px;
 }
 
 .triangle--yellow {
-    height: 0px;
-    width: 0px;
-    max-width: 0px;
-    border-right: 200px solid transparent;
-    border-left: 200px solid transparent;
-    border-bottom: 200px solid yellow;
-    margin: 8px;
+  height: 0px;
+  width: 0px;
+  max-width: 0px;
+  border-right: 200px solid transparent;
+  border-left: 200px solid transparent;
+  border-bottom: 200px solid yellow;
+  margin: 8px;
 }
