@@ -52,6 +52,7 @@ html {
   height: 0;
   width: 0;
   max-width: 0px;
+  min-width: 0;
   border-right: 200px solid transparent;
   border-left: 200px solid transparent;
   border-bottom: 200px solid orange;
