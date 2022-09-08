@@ -11,9 +11,3 @@ function increaseCount() {
     count++;
     handleChange();
 }
-
-document.getElementById("decrease").addEventListener('click', decreaseCount);
-function decreaseCount() {
-    count--;
-    handleChange();
-}
