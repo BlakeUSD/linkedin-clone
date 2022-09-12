@@ -13,17 +13,60 @@ html {
 
 a {
   text-decoration: none;
+  color: #fff;
 }
 
 ul {
   list-style: none;
 }
 
-.container {
-  height: 100vh;
-  /* background-color: #000; */
+.navbar {
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: green;
+}
+
+.navbar > div {
+  padding: 24px;
+}
+
+.navlist {
+  display: flex;
+}
+
+.navlink {
+  margin-left: 10px;
+}
+
+.topContainer {
+  display: flex;
+  background-color: yellowgreen;
+  padding: 16px;
+}
+
+.topContainer > img {
+  object-fit: contain;
+}
+
+.topContainer > p {
+  margin-left: 16px;
+}
+
+.middleContainer {
+  display: flex;
+  background-color: #f2f2f2;
+  padding: 16px;
+}
+
+.middleContainer > img {
+  object-fit: contain;
+}
+
+.middleContainer > p {
+  margin-right: 16px;
+}
+
+footer {
+  background-color: green;
 }
