@@ -2,70 +2,179 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lorem</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
-  <nav class="navbar">
-    <div class="navbarLeft">
-      <img src="https://picsum.photos/100/100" alt=""></img>
-    </div>
-    <div class="navbarRight">
-      <ul class="navbarRight__navlist">
-        <li class="navbarRight__navlink">
-          <a href="#about">About</a>
-        </li>
-        <li class="navlink">
-          <a href="#contact">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+    <nav class="navbar">
+        <div class="navbarLeft">
+            <a href="index.html" class="navbarLeft__logo"><img src="images/logo.png" alt=""></a>
+            <div class="navbarLeft__searchBox">
+                <img src="images/search.png" alt="">
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+        <div class="navbarCenter">
+            <ul>
+                <li><a class="navbarCenter__activeLink" href="#">
+                        <img src="images/home.png" alt=""><span>Home</span>
+                        </img>
+                    </a></li>
+                <li><a href="#"><img src="images/network.png" alt=""><span>My Network</span></img></a></li>
+                <li><a href="#"><img src="images/jobs.png" alt=""><span>Jobs</span></img></a></li>
+                <li><a href="#"><img src="images/message.png" alt=""><span>Messaging</span></img></a></li>
+                <li><a href="#"><img src="images/notification.png" alt=""><span>Notifications</span></img></a></li>
+            </ul>
+        </div>
+        <div class="navbarRight">
+            <div class="navbarRight__online">
+                <img src="images/user-1.png" alt="" class="navbarRight__avatar">
+            </div>
+        </div>
+    </nav>
+    <!-- ----- Navbar End ----- -->
 
-  <div class="topContainer">
-    <img src="https://picsum.photos/200/300" alt="">
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis maxime magni numquam voluptate ex a iusto
-      culpa amet! Laborum eaque ipsum aliquid explicabo placeat, fugit alias voluptatum reprehenderit repellat
-      molestiae.
-    </p>
-  </div>
+    <div class="container">
+        <!-- ----- Container Left ----- -->
+        <div class="sidebarLeft">
+            <div class="sidebarLeft__profileBox">
+                <img src="images/cover-pic.png" alt="" width="100%">
+                <div class="sidebarLeft__profileInfo">
+                    <img src="images/user-1.png" alt="">
+                    <h1>Rayan Walton</h1>
+                    <h3>Web Developer at Microsoft</h3>
+                    <ul>
+                        <li>Your profile views <span>52</span></li>
+                        <li>Your post views <span>810</span></li>
+                        <li>Your connections <span>205</span></li>
+                    </ul>
+                </div>
+                <div class="sidebarLeft__profileLink">
+                    <a href="#"><img src="images/items.png" alt="">My items</a>
+                    <a href="#"><img src="images/premium.png" alt="">Try Premium</a>
+                </div>
+            </div>
+            <div class="sidebarLeft__activity">
+                <h3>RECENT</h3>
+                <a href="#"><img src="images/recent.png" alt="">Web Development</a>
+                <a href="#"><img src="images/recent.png" alt="">User Interface</a>
+                <a href="#"><img src="images/recent.png" alt="">Online Learning</a>
+                <a href="#"><img src="images/recent.png" alt="">Learn Online</a>
+                <a href="#"><img src="images/recent.png" alt="">Code Better</a>
+                <a href="#"><img src="images/recent.png" alt="">Group Learning</a>
+                <h3>GROUPS</h3>
+                <a href="#"><img src="images/group.png" alt="">Web Design Group</a>
+                <a href="#"><img src="images/group.png" alt="">HTML & CSS Learners</a>
+                <a href="#"><img src="images/group.png" alt="">Python & JavaScript Group</a>
+                <a href="#"><img src="images/group.png" alt="">Learn Coding Online</a>
+                <h3>HASHTAG</h3>
+                <a href="#"><img src="images/hashtag.png" alt="">webdevelopment</a>
+                <a href="#"><img src="images/hashtag.png" alt="">userinterface</a>
+                <a href="#"><img src="images/hashtag.png" alt="">onlinelearning</a>
+                <div class="sidebarLeft__discoverMoreLink">
+                    <a href="#">Discover more</a>
+                </div>
 
-  <div class="middleContainer">
-    <p>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi id eum perspiciatis quibusdam deleniti! Ab
-      repudiandae, vero deserunt, laborum magni rem molestiae accusamus vel aliquam quia aliquid possimus voluptates
-      rerum.
-    </p>
-    <img src="https://picsum.photos/200/300" alt="">
-  </div>
-  <div class="bottomContainer">
-    <img src="https://picsum.photos/200/500" alt="">
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas modi saepe libero suscipit? Nam doloribus
-      dignissimos deserunt, facere eveniet qui repellat veritatis? Totam exercitationem fuga ipsum accusantium,
-      distinctio expedita repellat.
-    </p>
-    <p><span></span></p>
+            </div>
+        </div>
+        <!-- ----- Container Center ----- -->
+        <div class="mainContent">
+            <div class="mainContent__createPost">
+                <div class="mainContent__createPostInput">
+                    <img src="images/user-1.png" alt="">
+                    <textarea rows="2" placeholder="Write a post"></textarea>
+                </div>
+                <div class="mainContent__createPostLinks">
+                    <li><img src="images/photo.png" alt="">Photo</li>
+                    <li><img src="images/video.png" alt="">Video</li>
+                    <li><img src="images/event.png" alt="">Event</li>
+                    <li>Post</li>
+                </div>
+            </div>
+            <div class="mainContent__sortBy">
+                <hr>
+                <p>Sort-by: <span>top <img src="images/down-arrow.png" alt=""></span></p>
+            </div>
+            <div class="mainContent__post">
+                <div class="mainContent__postAuthor">
+                    <img src="images/user-3.png" alt="">
+                    <div>
+                        <h1>Benjamin Leo</h1>
+                        <small>Founder and CEO at Gellelio Group | Angel Investor</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+                <p>The success of every website depends on search engine optimization and digital marketing strategy. If
+                    you are on tthe first page of all major search engines then you are ahead of your competitors.</p>
+                <img src="images/post-image-1.png" alt="" width="100%">
 
-  </div>
-  <footer>
-    <img src="https://picsum.photos/100/100" alt="">
-    <div>
-      <ul>
-        <li>
-          <a href="">About</a>
-        </li>
-        <li>
-          <a href="">Contact</a>
-        </li>
-      </ul>
+                <div class="mainContent__postStats">
+                    <div>
+                        <img src="images/thumbsup.png" alt="">
+                        <img src="images/love.png" alt="">
+                        <img src="images/clap.png" alt="">
+                        <span class="postStats__likedUsers">Abhinav mishta and 75 others</span>
+                    </div>
+                    <div>
+                        <span>22 comments &middot; 40 shares</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ----- Container Right ----- -->
+        <div class="sidebarRight">
+            <div class="sidebarRight__news">
+                <img src="images/more.png" alt="" class="news__InfoIcon">
+                <h3>Trending News</h3>
+                <a href="#">High demand for skilled manpower</a>
+                <span>1d ago &middot; 10,934 readers</span>
+                <a href="#">Careers growing horizontally too</a>
+                <span>19h ago &middot; 1552 readers</span>
+                <a href="#">Less work visa for US, more for UK</a>
+                <span>1d ago &middot; 27,290 readers</span>
+                <a href="#">More hiring = higher confidence?</a>
+                <span>18h ago &middot; 8208 readers</span>
+                <a href="#">Gautam Adani is the world's third richest</a>
+                <span>12h ago &middot; 4205 readers</span>
+
+                <a href="#" class="sidebarRight__readMoreLink">Read more</a>
+            </div>
+            <div class="sidebarRight__advertisement">
+                <small>Ad &period; &period; &period;</small>
+                <p>Master the 5 principles of web design</p>
+                <div>
+                    <img src="images/user-1.png" alt="">
+                    <img src="images/mi-logo.png" alt="">
+                </div>
+                <b>Brand and Demand in Xiamoi</b>
+                <a href="#" class="sidebarRight__advertisementLink">Learn more</a>
+            </div>
+
+            <div class="sidebarRight__usefulLinks">
+                <a href="#">About</a>
+                <a href="#">Accessibility</a>
+                <a href="#">Help Center</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Advertising</a>
+                <a href="#">Get the App</a>
+                <a href="#">More</a>
+
+                <div class="sidebarRight__copyrightMessage">
+                    <img src="images/logo.png" alt="">
+                    <p>Linkedup &copy; 2022. All rights reserved</p>
+                </div>
+            </div>
+
+        </div>
     </div>
-  </footer>
+
 </body>
 
 </html>
