@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Linked-In</title>
+    <title>LinkedIn</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 
 <body>
+    <!-- ----- Navbar Start ----- -->
     <nav class="navbar">
         <div class="navbarLeft">
             <a href="index.html" class="navbarLeft__logo"><img src="images/logo.png" alt=""></a>
@@ -33,14 +34,54 @@
         </div>
         <div class="navbarRight">
             <div class="navbarRight__online">
-                <img src="images/user-1.png" alt="" class="navbarRight__avatar">
+                <img src="images/user-1.png" alt="" class="navbarRight__avatar" onclick="toggleMenu()">
             </div>
         </div>
+
+        <!-- ----- navbarAvatar Drop Down Menu Start ----- -->
+        <div class="navbar__profileMenuWrapper" id="profileMenu">
+            <div class="navbar__profileMenu">
+                <div class="navbar__profileMenuUserInfo">
+                    <img src="images/user-1.png" alt="">
+                    <div>
+                        <h3>Rayan Walton</h3>
+                        <a href="#">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="navbar__profileMenuLink">
+                    <img src="images/feedback.png" alt="">
+                    <p>Give Feedback</p>
+                    <span>&gt;</span>
+                </a>
+                <a href="#" class="navbar__profileMenuLink">
+                    <img src="images/setting.png" alt="">
+                    <p>Settings & Privacy</p>
+                    <span>&gt;</span>
+                </a>
+                <a href="#" class="navbar__profileMenuLink">
+                    <img src="images/help.png" alt="">
+                    <p>Help & Support</p>
+                    <span>&gt;</span>
+                </a>
+                <a href="#" class="navbar__profileMenuLink">
+                    <img src="images/display.png" alt="">
+                    <p>Display & Accessibility</p>
+                    <span>&gt;</span>
+                </a>
+                <a href="#" class="navbar__profileMenuLink">
+                    <img src="images/logout.png" alt="">
+                    <p>Logout</p>
+                    <span>&gt;</span>
+                </a>
+            </div>
+        </div>
+        <!-- ----- navbarAvatar Drop Down Menu End ----- -->
     </nav>
     <!-- ----- Navbar End ----- -->
 
     <div class="container">
-        <!-- ----- Container Left ----- -->
+        <!-- ----- sidebarLeft start ----- -->
         <div class="sidebarLeft">
             <div class="sidebarLeft__profileBox">
                 <img src="images/cover-pic.png" alt="" width="100%">
@@ -82,7 +123,9 @@
 
             </div>
         </div>
-        <!-- ----- Container Center ----- -->
+        <!-- ----- sidebarLeft End ----- -->
+
+        <!-- ----- mainContent Start ----- -->
         <div class="mainContent">
             <div class="mainContent__createPost">
                 <div class="mainContent__createPostInput">
@@ -118,17 +161,133 @@
                         <img src="images/thumbsup.png" alt="">
                         <img src="images/love.png" alt="">
                         <img src="images/clap.png" alt="">
-                        <span class="postStats__likedUsers">Abhinav mishta and 75 others</span>
+                        <span class="mainContent__postStatsLikedUsers">Abhinav mishta and 75 others</span>
                     </div>
                     <div>
                         <span>22 comments &middot; 40 shares</span>
                     </div>
                 </div>
+                <div class="mainContent__postActivity">
+                    <div>
+                        <img src="images/user-1.png" alt="" class="mainContent__postActivityUserIcon">
+                        <img src="images/down-arrow.png" alt="" class="mainContent__postActivityArrowIcon">
+                    </div>
+                    <div class="mainContent__postActivityLink">
+                        <img src="images/like.png" alt="">
+                        <span>Like</span>
+                    </div>
+                    <div class="mainContent__postActivityLink">
+                        <img src="images/comment.png" alt="">
+                        <span>Comment</span>
+                    </div>
+                    <div class="mainContent__postActivityLink">
+                        <img src="images/share.png" alt="">
+                        <span>Share</span>
+                    </div>
+                    <div class="mainContent__postActivityLink">
+                        <img src="images/send.png" alt="">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+            <div class="mainContent__post">
+                <div class="mainContent__postAuthor">
+                    <img src="images/user-4.png" alt="">
+                    <div>
+                        <h1>Clarence George</h1>
+                        <small>Founder and CEO at Gellelio Group | Angel Investor</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+                <p>The success of every website depends on search engine optimization and digital marketing strategy. If
+                    you are on tthe first page of all major search engines then you are ahead of your competitors.</p>
+                <img src="images/post-image-2.png" alt="" width="100%">
 
+                <div class="mainContent__postStats">
+                    <div>
+                        <img src="images/thumbsup.png" alt="">
+                        <img src="images/love.png" alt="">
+                        <img src="images/clap.png" alt="">
+                        <span class="mainContent__postStatsLikedUsers">Abhinav mishta and 75 others</span>
+                    </div>
+                    <div>
+                        <span>22 comments &middot; 40 shares</span>
+                    </div>
+                </div>
+                <div class="mainContent__postActivity">
+                    <div>
+                        <img src="images/user-1.png" alt="" class="mainContent__postActivityUserIcon">
+                        <img src="images/down-arrow.png" alt="" class="mainContent__postActivityArrowIcon">
+                    </div>
+                    <div class="mainContent__postActivityLink">
+                        <img src="images/like.png" alt="">
+                        <span>Like</span>
+                    </div>
+                    <div class="mainContent__postActivityLink">
+                        <img src="images/comment.png" alt="">
+                        <span>Comment</span>
+                    </div>
+                    <div class="mainContent__postActivityLink">
+                        <img src="images/share.png" alt="">
+                        <span>Share</span>
+                    </div>
+                    <div class="mainContent__postActivityLink">
+                        <img src="images/send.png" alt="">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+            <div class="mainContent__post">
+                <div class="mainContent__postAuthor">
+                    <img src="images/user-4.png" alt="">
+                    <div>
+                        <h1>Clarence George</h1>
+                        <small>Founder and CEO at Gellelio Group | Angel Investor</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+                <p>The success of every website depends on search engine optimization and digital marketing strategy. If
+                    you are on tthe first page of all major search engines then you are ahead of your competitors.</p>
+                <img src="images/post-image-3.png" alt="" width="100%">
+
+                <div class="mainContent__postStats">
+                    <div>
+                        <img src="images/thumbsup.png" alt="">
+                        <img src="images/love.png" alt="">
+                        <img src="images/clap.png" alt="">
+                        <span class="mainContent__postStatsLikedUsers">Abhinav mishta and 75 others</span>
+                    </div>
+                    <div>
+                        <span>22 comments &middot; 40 shares</span>
+                    </div>
+                </div>
+                <div class="mainContent__postActivity">
+                    <div>
+                        <img src="images/user-1.png" alt="" class="mainContent__postActivityUserIcon">
+                        <img src="images/down-arrow.png" alt="" class="mainContent__postActivityArrowIcon">
+                    </div>
+                    <div class="mainContent__postActivityLink">
+                        <img src="images/like.png" alt="">
+                        <span>Like</span>
+                    </div>
+                    <div class="mainContent__postActivityLink">
+                        <img src="images/comment.png" alt="">
+                        <span>Comment</span>
+                    </div>
+                    <div class="mainContent__postActivityLink">
+                        <img src="images/share.png" alt="">
+                        <span>Share</span>
+                    </div>
+                    <div class="mainContent__postActivityLink">
+                        <img src="images/send.png" alt="">
+                        <span>Send</span>
+                    </div>
+                </div>
             </div>
         </div>
+        <!-- ----- mainContent End ----- -->
 
-        <!-- ----- Container Right ----- -->
+        <!-- ----- sidebarRight Start ----- -->
         <div class="sidebarRight">
             <div class="sidebarRight__news">
                 <img src="images/more.png" alt="" class="news__InfoIcon">
@@ -173,6 +332,7 @@
             </div>
 
         </div>
+        <!-- ----- sidebarRight End ----- -->
     </div>
 
 </body>
