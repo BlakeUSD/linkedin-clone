@@ -22,6 +22,7 @@ li {
   list-style: none;
 }
 
+/* ----- Navbar Start ----- */
 .navbar {
   display: flex;
   align-items: center;
@@ -121,8 +122,238 @@ li {
   background: #41db51;
   position: absolute;
 }
-
 /* ----- Navbar End ----- */
+
+/* ----- Navbar Dropdown Menu Start ----- */
+.navbar__profileMenuWrapper {
+  position: absolute;
+  top: 100%;
+  right: 5%;
+  width: 320px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+
+.navbar__profileMenuWrapper.openMenu {
+  max-height: 400px;
+}
+
+.navbar__profileMenu {
+  background: #222;
+  color: #fff;
+  padding: 20px;
+  margin: 10px;
+}
+
+.navbar__profileMenuUserInfo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__profileMenuUserInfo img {
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.navbar__profileMenuUserInfo h3 {
+  font-weight: 500;
+  margin-bottom: -7px;
+}
+
+.navbar__profileMenuUserInfo a {
+  color: #c9dbf8;
+  font-size: 13px;
+}
+
+.navbar__profileMenu hr {
+  border: 0;
+  height: 1px;
+  width: 100%;
+  background: #fff;
+  margin: 15px 0 10px;
+}
+
+.navbar__profileMenuLink {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  margin: 12px 0;
+  font-size: 14px;
+}
+
+.navbar__profileMenuLink p {
+  width: 100%;
+}
+
+.navbar__profileMenuLink img {
+  width: 35px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+/* ----- Navbar Dropdown Menu End ----- */
+
+/* ----- profilePage Start ----- */
+.container__profileMain {
+  flex-basis: 73%;
+}
+.container__profileSidebar {
+  flex-basis: 25%;
+  align-self: flex-start;
+  position: sticky;
+  top: 73%;
+}
+
+.container__profileContainer {
+  background: #fff;
+}
+.container__profileContainerInner {
+  padding: 0 4% 10px;
+}
+
+.container__profileContainerInnerAvatar {
+  width: 150px;
+  border-radius: 50%;
+  margin-top: -75px;
+  padding: 5px;
+  background: #fff;
+}
+
+.container__profileContainer h1 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #222;
+}
+
+.container__profileContainer b {
+  font-weight: 500;
+}
+
+.container__profileContainer p {
+  margin-top: 5px;
+}
+
+.container__profileContainer p a {
+  color: #045be6;
+  font-weight: 500;
+}
+
+.container__profileMutualConnection {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.container__profileMutualConnection img {
+  width: 30px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.container__profileBtn {
+  margin: 20px 0;
+}
+
+.container__profileBtn a {
+  display: inline-flex;
+  align-items: center;
+  background: #e4e6eb;
+  padding: 6px 15px;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.container__profileBtn a img {
+  width: 18px;
+  margin-right: 5px;
+}
+
+.container__profileBtn .btn--primary {
+  background: #045be6;
+  color: #fff;
+}
+
+.container__profileDescription {
+  background: #fff;
+  padding: 20px 4% 30px;
+  margin: 12px 0;
+}
+
+.container__profileDescription h2 {
+  color: #333;
+  margin: 10px 0 20px;
+  font-weight: 600;
+}
+
+.container__profileDescriptionSeeMoreLink {
+  display: block;
+  text-align: right;
+  font-size: 16px;
+}
+
+.container__profileDescriptionRow {
+  display: flex;
+  align-items: flex-start;
+  margin: 20px 0;
+}
+
+.container__profileDescriptionRow img {
+  width: 50px;
+  margin-right: 25px;
+  margin-top: 5px;
+}
+
+.container__profileDescriptionRow div {
+  width: 100%;
+}
+
+.container__profileDescriptionRow h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.container__profileDescriptionRow b {
+  display: block;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.container__profileDescriptionRow p {
+  margin-top: 15px;
+}
+
+.container__profileDescriptionRow hr {
+  border: 0;
+  border-bottom: 1px solid #999;
+  margin-top: 10px;
+}
+
+.container__profileExperienceLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  font-weight: 500;
+}
+
+.container__profileExperienceLink img {
+  width: 20px;
+  margin-left: 8px;
+}
+
+.container__profileSkillsBtn {
+  display: inline-block;
+  margin: 10px 5px;
+  padding: 6px 18px;
+  border: 1px solid #777;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* ----- profilePage End----- */
 
 .container {
   padding: 20px 6%;
@@ -135,6 +366,8 @@ li {
 .sidebarLeft {
   flex-basis: 25%;
   align-self: flex-start;
+  position: sticky;
+  top: 73px;
 }
 
 .sidebarLeft__profileBox {
@@ -372,10 +605,65 @@ li {
   margin-bottom: 15px;
 }
 
+.mainContent__postStats {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 6px;
+}
+
+.mainContent__postStats div {
+  display: flex;
+  align-items: center;
+}
+
+.mainContent__postStats img {
+  width: 15px;
+  margin-right: -5px;
+}
+
+.mainContent__postStatsLikedUsers {
+  margin-left: 10px;
+}
+
+.mainContent__postActivity {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.mainContent__postActivity div {
+  display: flex;
+  align-items: center;
+}
+
+.mainContent__postActivityUserIcon {
+  width: 22px;
+  border-radius: 50%;
+}
+
+.mainContent__postActivityArrowIcon {
+  width: 12px;
+  margin-left: 5px;
+}
+
+.mainContent__postActivityLink img {
+  width: 18px;
+  margin-right: 8px;
+}
+
 /* ----- sidebarRight ----- */
 .sidebarRight {
   flex-basis: 25%;
   align-self: flex-start;
+  position: sticky;
+  top: 73px;
 }
 
 .sidebarRight__news {
