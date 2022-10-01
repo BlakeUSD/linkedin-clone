@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LinkedIn</title>
+    <title>LinkedUp</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
@@ -22,10 +22,8 @@
         </div>
         <div class="navbarCenter">
             <ul>
-                <li><a class="navbarCenter__activeLink" href="#">
-                        <img src="images/home.png" alt=""><span>Home</span>
-                        </img>
-                    </a></li>
+                <li><a class="navbarCenter__activeLink" href="index.html"><img src="images/home.png" alt="">
+                    <span>Home</span></img></a></li>
                 <li><a href="#"><img src="images/network.png" alt=""><span>My Network</span></img></a></li>
                 <li><a href="#"><img src="images/jobs.png" alt=""><span>Jobs</span></img></a></li>
                 <li><a href="#"><img src="images/message.png" alt=""><span>Messaging</span></img></a></li>
@@ -45,7 +43,7 @@
                     <img src="images/user-1.png" alt="">
                     <div>
                         <h3>Rayan Walton</h3>
-                        <a href="#">See your profile</a>
+                        <a href="profile.html">See your profile</a>
                     </div>
                 </div>
                 <hr>
@@ -100,7 +98,7 @@
                     <a href="#"><img src="images/premium.png" alt="">Try Premium</a>
                 </div>
             </div>
-            <div class="sidebarLeft__activity">
+            <div class="sidebarLeft__activity" id="sidebarActivity">
                 <h3>RECENT</h3>
                 <a href="#"><img src="images/recent.png" alt="">Web Development</a>
                 <a href="#"><img src="images/recent.png" alt="">User Interface</a>
@@ -120,8 +118,9 @@
                 <div class="sidebarLeft__discoverMoreLink">
                     <a href="#">Discover more</a>
                 </div>
-
             </div>
+
+            <p id="showMoreLink" onclick="toggleActivity()">Show more <b>+</b></p>
         </div>
         <!-- ----- sidebarLeft End ----- -->
 
@@ -153,7 +152,7 @@
                     </div>
                 </div>
                 <p>The success of every website depends on search engine optimization and digital marketing strategy. If
-                    you are on tthe first page of all major search engines then you are ahead of your competitors.</p>
+                    you are on the first page of all major search engines then you are ahead of your competitors.</p>
                 <img src="images/post-image-1.png" alt="" width="100%">
 
                 <div class="mainContent__postStats">
@@ -161,7 +160,7 @@
                         <img src="images/thumbsup.png" alt="">
                         <img src="images/love.png" alt="">
                         <img src="images/clap.png" alt="">
-                        <span class="mainContent__postStatsLikedUsers">Abhinav mishta and 75 others</span>
+                        <span class="mainContent__postStatsLikedUsers">Alexis Gentles and 75 others</span>
                     </div>
                     <div>
                         <span>22 comments &middot; 40 shares</span>
@@ -200,7 +199,7 @@
                     </div>
                 </div>
                 <p>The success of every website depends on search engine optimization and digital marketing strategy. If
-                    you are on tthe first page of all major search engines then you are ahead of your competitors.</p>
+                    you are on the first page of all major search engines then you are ahead of your competitors.</p>
                 <img src="images/post-image-2.png" alt="" width="100%">
 
                 <div class="mainContent__postStats">
@@ -208,7 +207,7 @@
                         <img src="images/thumbsup.png" alt="">
                         <img src="images/love.png" alt="">
                         <img src="images/clap.png" alt="">
-                        <span class="mainContent__postStatsLikedUsers">Abhinav mishta and 75 others</span>
+                        <span class="mainContent__postStatsLikedUsers">Alexis Gentles and 75 others</span>
                     </div>
                     <div>
                         <span>22 comments &middot; 40 shares</span>
@@ -239,9 +238,9 @@
             </div>
             <div class="mainContent__post">
                 <div class="mainContent__postAuthor">
-                    <img src="images/user-4.png" alt="">
+                    <img src="images/user-5.png" alt="">
                     <div>
-                        <h1>Clarence George</h1>
+                        <h1>William Jones</h1>
                         <small>Founder and CEO at Gellelio Group | Angel Investor</small>
                         <small>2 hours ago</small>
                     </div>
@@ -255,7 +254,7 @@
                         <img src="images/thumbsup.png" alt="">
                         <img src="images/love.png" alt="">
                         <img src="images/clap.png" alt="">
-                        <span class="mainContent__postStatsLikedUsers">Abhinav mishta and 75 others</span>
+                        <span class="mainContent__postStatsLikedUsers">Alexis Gentles and 75 others</span>
                     </div>
                     <div>
                         <span>22 comments &middot; 40 shares</span>

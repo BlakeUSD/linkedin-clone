@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedUp</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- ----- Navbar Start ----- -->
+    <nav class="navbar">
+        <div class="navbarLeft">
+            <a href="index.html" class="navbarLeft__logo"><img src="images/logo.png" alt=""></a>
+            <div class="navbarLeft__searchBox">
+                <img src="images/search.png" alt="">
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+        <div class="navbarCenter">
+            <ul>
+                <li><a class="navbarCenter__activeLink" href="index.html"><img src="images/home.png" alt="">
+                    <span>Home</span></img></a></li>
+                <li><a href="#"><img src="images/network.png" alt=""><span>My Network</span></img></a></li>
+                <li><a href="#"><img src="images/jobs.png" alt=""><span>Jobs</span></img></a></li>
+                <li><a href="#"><img src="images/message.png" alt=""><span>Messaging</span></img></a></li>
+                <li><a href="#"><img src="images/notification.png" alt=""><span>Notifications</span></img></a></li>
+            </ul>
+        </div>
+        <div class="navbarRight">
+            <div class="navbarRight__online">
+                <img src="images/user-1.png" alt="" class="navbarRight__avatar" onclick="toggleMenu()">
+            </div>
+        </div>
+
+        <!-- ----- navbarAvatar Drop Down Menu Start ----- -->
+        <div class="navbar__profileMenuWrapper" id="profileMenu">
+            <div class="navbar__profileMenu">
+                <div class="navbar__profileMenuUserInfo">
+                    <img src="images/user-1.png" alt="">
+                    <div>
+                        <h3>Rayan Walton</h3>
+                        <a href="profile.html">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="navbar__profileMenuLink">
+                    <img src="images/feedback.png" alt="">
+                    <p>Give Feedback</p>
+                    <span>&gt;</span>
+                </a>
+                <a href="#" class="navbar__profileMenuLink">
+                    <img src="images/setting.png" alt="">
+                    <p>Settings & Privacy</p>
+                    <span>&gt;</span>
+                </a>
+                <a href="#" class="navbar__profileMenuLink">
+                    <img src="images/help.png" alt="">
+                    <p>Help & Support</p>
+                    <span>&gt;</span>
+                </a>
+                <a href="#" class="navbar__profileMenuLink">
+                    <img src="images/display.png" alt="">
+                    <p>Display & Accessibility</p>
+                    <span>&gt;</span>
+                </a>
+                <a href="#" class="navbar__profileMenuLink">
+                    <img src="images/logout.png" alt="">
+                    <p>Logout</p>
+                    <span>&gt;</span>
+                </a>
+            </div>
+        </div>
+        <!-- ----- navbarAvatar Drop Down Menu End ----- -->
+    </nav>
+    <!-- ----- Navbar End ----- -->
+
+    <div class="container">
+        <div class="container__profileMain">
+            <div class="container__profileContainer">
+                <img src="images/cover-pic.png" alt="" width="100%">
+                <div class="container__profileContainerInner">
+                    <img src="images/user-1.png" alt="" class="container__profileContainerInnerAvatar">
+                    <h1>Rayan Walton</h1>
+                    <b>Web Developer at Microsoft | Former developer at DataStack and Intern at Oracle</b>
+                    <p>San Francisco, United States &middot; <a href="#">Contact info</a></p>
+                    <div class="container__profileMutualConnection">
+                        <img src="/images/user-2.png" alt="">
+                        <span>1 mutual connection: Orlando Diggs</span>
+                    </div>
+                    <div class="container__profileBtn">
+                        <a href="#" class="container__profileBtn btn--primary"><img src="images/connect.png"
+                                alt="">Connect</a>
+                        <a href="#"><img src="images/chat.png" alt="">Message</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container__profileDescription">
+                <h2>About</h2>
+                <p>The success of every website depends on search engine optimization and digital marketing strategy. If
+                    you are on the first page of all major search engines then you are ahead of your competitors.</p>
+                <a href="#" class="container__profileDescriptionSeeMoreLink">See more...</a>
+            </div>
+
+            <div class="container__profileDescription">
+                <h2>Experience</h2>
+                <div class="container__profileDescriptionRow">
+                    <img src="images/microsoft.png" alt="">
+                    <div>
+                        <h3>Lead Front-End Developer</h3>
+                        <p>Microsoft &middot; Full-time</p>
+                        <b>Feb 2021 - Present &middot; 1.5 years</b>
+                        <p>Computer programming is the process of performing a particular computation, usually by
+                            designing and building an executable computer program.</p>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="container__profileDescriptionRow">
+                    <img src="images/slack.png" alt="">
+                    <div>
+                        <h3>Full Stack Developer</h3>
+                        <p>Slack &middot; Full-time</p>
+                        <b>June 2018 - Jan 2021 &middot; 2.8 years</b>
+                        <p>Computer programming is the process of performing a particular computation, usually by
+                            designing and building an executable computer program.</p>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="container__profileDescriptionRow">
+                    <img src="images/google.png" alt="">
+                    <div>
+                        <h3>Web Developer</h3>
+                        <p>Google Inc &middot; Full-time</p>
+                        <b>Sept 2015 - May 2018 &middot; 2.6 years</b>
+                        <p>Computer programming is the process of performing a particular computation, usually by
+                            designing and building an executable computer program.</p>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="container__profileExperienceLink">Show all 7 experiences <img
+                        src="images/right-arrow.png" alt=""></a>
+            </div>
+
+            <div class="container__profileDescription">
+                <h2>Education</h2>
+                <div class="container__profileDescriptionRow">
+                    <img src="images/stanford.png" alt="">
+                    <div>
+                        <h3>Stanford University</h3>
+                        <b>BSEE, Electrical Engineering</b>
+                        <b>2018 - 2022</b>
+                        <hr>
+                    </div>
+                </div>
+                <div class="container__profileDescriptionRow">
+                    <img src="images/north.png" alt="">
+                    <div>
+                        <h3>Northwestern University</h3>
+                        <b>Computer Science</b>
+                        <b>2015 - 2018</b>
+                        <hr>
+                    </div>
+                </div>
+                <div class="container__profileDescriptionRow">
+                    <img src="images/mit.png" alt="">
+                    <div>
+                        <h3>Harvard University</h3>
+                        <b>Senior High School</b>
+                        <b>2005 - 2015</b>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container__profileDescription">
+                <h2>Skills</h2>
+                <a href="#" class="container__profileSkillsBtn">Leadership</a>
+                <a href="#" class="container__profileSkillsBtn">Web Design</a>
+                <a href="#" class="container__profileSkillsBtn">Development</a>
+                <a href="#" class="container__profileSkillsBtn">Communication</a>
+                <a href="#" class="container__profileSkillsBtn">UI/UX</a>
+                <a href="#" class="container__profileSkillsBtn">Planning</a>
+                <a href="#" class="container__profileSkillsBtn">Coding</a>
+                <a href="#" class="container__profileSkillsBtn">JavaScript</a>
+                <a href="#" class="container__profileSkillsBtn">Python</a>
+                <a href="#" class="container__profileSkillsBtn">Entrepreneurship</a>
+            </div>
+            <div class="container__profileDescription">
+                <h2>Languages</h2>
+                <a href="#" class="container__profileLanguageBtn">English</a>
+                <a href="#" class="container__profileLanguageBtn">German</a>
+            </div>
+        </div>
+
+        <!-- ----- sidebarRight Start ----- -->
+        <div class="container__profileSidebar">
+            <div class="sidebarRight__advertisement">
+                <small>Ad &period; &period; &period;</small>
+                <p>Master the 5 principles of web design</p>
+                <div>
+                    <img src="images/user-1.png" alt="">
+                    <img src="images/mi-logo.png" alt="">
+                </div>
+                <b>Brand and Demand in Xiamoi</b>
+                <a href="#" class="sidebarRight__advertisementLink">Learn more</a>
+            </div>
+
+            <div class="sidebarRight__people">
+                <h3>People you may know</h3>
+                <div class="sidebarRight__peopleRow">
+                    <img src="images/user-3.png" alt="">
+                    <div>
+                        <h2>Alicia Holly</h2>
+                        <p>Head of Marketing at Alibaba</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+                <div class="sidebarRight__peopleRow">
+                    <img src="images/user-4.png" alt="">
+                    <div>
+                        <h2>Benjamin Leo</h2>
+                        <p>Head of Marketing at Alibaba</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+                <div class="sidebarRight__peopleRow">
+                    <img src="images/user-5.png" alt="">
+                    <div>
+                        <h2>Steve Greg</h2>
+                        <p>Head of Marketing at Alibaba</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+                <div class="sidebarRight__peopleRow">
+                    <img src="images/user-2.png" alt="">
+                    <div>
+                        <h2>Martin Lewis</h2>
+                        <p>Head of Marketing at Alibaba</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+                <div class="sidebarRight__peopleRow">
+                    <img src="images/user-3.png" alt="">
+                    <div>
+                        <h2>Sharon Smith</h2>
+                        <p>Head of Marketing at Alibaba</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+            </div>
+            <!-- ----- sidebarRight End ----- -->
+
+        </div>
+    </div>
+
+    <div class="profileFooter">
+        <div class="sidebarRight__usefulLinks">
+            <a href="#">About</a>
+            <a href="#">Accessibility</a>
+            <a href="#">Help Center</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Advertising</a>
+            <a href="#">Get the App</a>
+            <a href="#">More</a>
+
+            <div class="sidebarRight__copyrightMessage">
+                <img src="images/logo.png" alt="">
+                <p>Linkedup &copy; 2022. All rights reserved</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
